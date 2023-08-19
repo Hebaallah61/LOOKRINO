@@ -1,0 +1,96 @@
+﻿@model List<RINO.Models.Device>
+
+<div class="main-banner">
+        <div class="counter-content">
+            <ul>
+                <li><h1>R</h1></li>
+                <li><h1>I</h1></li>
+                <li><h1>N</h1></li>
+                <li><h1>O</h1></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-content">
+                        
+                        
+                        <h2>You Will Find What You Need </h2>
+                        <div class="main-white-button">
+                            <a href="ticket-details.html">New Arrivals</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="show-events-carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-show-events owl-carousel">
+                    @foreach(var d in Model)
+                    {
+
+                         <div class="item">
+                            <a asp-controller="Device" asp-action="Details" asp-route-id="@d.DeviceId"><img src="@d.ImgUrl" alt=""></a>
+                        </div>
+                    }
+                   
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coming-events">
+        <div class="left-button">
+            <div class="main-white-button">
+                <a asp-controller="Device" asp-action="DeviceList">Devices</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="event-item">
+                        <div class="thumb">
+                            <a asp-controller="Device" asp-action="DeviceList" asp-route-category="Phones"><img src="~/assets/images/phon.jpg" alt="" height="350"></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="event-details.html"><h4>Phones</h4></a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-item">
+                        <div class="thumb">
+                            <a asp-controller="Device" asp-action="DeviceList" asp-route-category="LapTops"><img src="~/assets/images/l1.jpeg" alt="" height="350"></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="event-details.html"><h4>LapTops</h4></a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-item">
+                        <div class="thumb">
+                            <a asp-controller="Device" asp-action="DeviceList" asp-route-category="Tablets"><img src="~/assets/images/tab.jpg" alt="" height="350"></a>
+                        </div>
+                        <div class="down-content">
+                            <a href="event-details.html"><h4>Tablets</h4></a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+   
+  

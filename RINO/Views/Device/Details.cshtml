@@ -1,0 +1,37 @@
+﻿@model Device
+
+<div class="event-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="left-image">
+                    <div class="thumb">
+                        <img src="~/@Model.ImgUrl" alt="" width="300" height="350"   >
+                       
+                     
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="right-content">
+                    <div class="down-content">
+                        <div class="item-info">
+                            <h4>@Model.Name</h4>
+                            <ul>
+                                <li>Code: @Model.Code</li>
+                                <li>Category: @Model.Category?.CategoryName</li>
+                                <li>Price: @Model.Price $</li>
+                                <li>NumInstock: @Model.NumInstock</li>
+                                <li>Description: @Model.Description</li>
+                                <li>
+                                    <a class="btn btn-secondary" asp-controller="Cart" asp-action="AddToCart" asp-route-did="@Model.DeviceId">Add To Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

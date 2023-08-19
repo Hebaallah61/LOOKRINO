@@ -1,0 +1,65 @@
+﻿@model Order
+<div class="container">
+<form asp-action="CheckOut" method="post" role="form">
+    <div asp-validation-summary="All" class="alert-danger"></div>
+<div class="mb-3">
+  <label asp-for="FirstName" class="form-label"></label>
+  <input asp-for="FirstName" class="form-control" />
+  <span asp-validation-for="FirstName"></span>
+</div>
+<div class="mb-3">
+  <label asp-for="LastName" class="form-label"></label>
+  <input  asp-for="LastName" class="form-control" />
+  <span asp-validation-for="LastName"></span>
+
+</div>
+<div class="mb-3">
+  <label asp-for="Address" class="form-label"></label>
+  <input asp-for="Address" class="form-control" />
+  <span asp-validation-for="Address"></span>
+
+</div>
+<div class="mb-3">
+  <label asp-for="City" class="form-label"></label>
+  <input asp-for="City" class="form-control form-control-sm" />
+  <span asp-validation-for="City"></span>
+
+</div>
+<div>
+  <label asp-for="Country"  class="form-label"></label>
+  <input asp-for="Country" class="form-control form-control-lg" />
+  <span asp-validation-for="Country"></span>
+
+</div>
+<div>
+  <label asp-for="Region" class="form-label"></label>
+  <input asp-for="Region" class="form-control form-control-lg" />
+  <span asp-validation-for="Region"></span>
+
+</div>
+<div>
+  <label asp-for="ZipCode" class="form-label"></label>
+  <input asp-for="ZipCode" class="form-control form-control-lg" />
+  <span asp-validation-for="ZipCode"></span>
+
+</div>
+<div>
+  <label asp-for="Email" class="form-label"></label>
+  <input asp-for="Email" class="form-control form-control-lg" />
+  <span asp-validation-for="Email"></span>
+
+</div>
+<div>
+  <label asp-for="Phone" class="form-label"></label>
+  <input asp-for="Phone" class="form-control form-control-lg" />
+  <span asp-validation-for="Phone"></span>
+
+</div>
+
+
+<div>
+
+  <input class="btn btn-outline-dark form-control form-control-lg" type="submit" value="Complete Order">
+</div>
+</form>
+</div>

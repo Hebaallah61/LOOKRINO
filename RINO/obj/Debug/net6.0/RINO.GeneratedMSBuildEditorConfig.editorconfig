@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RINO
+build_property.RootNamespace = RINO
+build_property.ProjectDir = E:\CS problem solving\c#pd_heba\Project\RINO\RINO\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\CS problem solving\c#pd_heba\Project\RINO\RINO
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Pages/InStock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5TdG9jay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Pages/Shared/_PageLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9QYWdlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Device/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Device/DeviceList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXERldmljZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Device/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2aWNlXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Order/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2hlY2tPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Order/CheckOutComplete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2hlY2tPdXRDb21wbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Shared/Components/CategoriesMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmllc01lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Shared/Components/ShoppingCartSummary/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2hvcHBpbmdDYXJ0U3VtbWFyeVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CS problem solving/c\#pd_heba/Project/RINO/RINO/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

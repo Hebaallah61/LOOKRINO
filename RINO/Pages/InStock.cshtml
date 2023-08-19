@@ -1,0 +1,52 @@
+﻿@page
+@model RINO.Pages.InStockModel
+
+
+
+<div class="container">
+    <div class="col-lg-12" >
+    <div class="heading m-4 bg-dark align-content-center text-center">
+        <div class="btn btn-outline-light">IN Stock</div> 
+    </div>
+</div>
+    <div class="row">
+        @foreach (var i in Model.Items)
+        {
+            <div class="col-lg-4 mb-4">
+                <div >
+                    <div class="thumb">
+                        <img src="@i.ImgUrl" alt="" width="300" height="350">
+                          <div class="main-dark-button" >
+                                <a  asp-controller="Cart" asp-action="AddToCart" asp-route-did="@i.DeviceId">Add To Cart</a>
+                          </div>
+                       
+                    </div>
+                    <div class="down-content">
+                       
+                        <div class="item-info">
+                            <h4>@i.Name</h4>
+                            <ul>
+                                <li>Code: @i.Code</li>
+                                <li>Category: @i.Category?.CategoryName</li>
+                                <li> @i.Price </li>
+                            </ul>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="col-lg-12">
+        <div class="pagination">
+            <ul>
+                <li><a href="#">Prev</a></li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

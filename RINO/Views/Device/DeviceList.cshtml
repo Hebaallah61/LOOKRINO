@@ -1,0 +1,54 @@
+﻿@model RINO.ViewModels.DeviceViewModel
+
+<div class="container">
+         <div class="row">
+        @foreach (var device in Model.Devices)
+        {
+            <div class="col-lg-4 mb-4">
+                <div >
+                    <div class="thumb">
+                       <img src="~/@device.ImgUrl" alt="" width="300" height="350">
+                          <div class="main-dark-button" >
+                                <a  asp-controller="Cart" asp-action="AddToCart" asp-route-did="@device.DeviceId">Add To Cart</a>
+                                <a  asp-controller="Device" asp-action="Details" asp-route-id="@device.DeviceId">Go To Details</a>
+
+                            </div>
+                       
+                    </div>
+                    <div class="down-content">
+                       
+                        <div class="item-info">
+                            <h4>@device.Name</h4>
+                            <ul>
+                                <li>Code: @device.Code</li>
+                                <li>Category: @device.Category?.CategoryName</li>
+                                <li>Price: @device.Price + $ </li>
+                                <li>NumInstock: @device.NumInstock</li>
+                            </ul>
+                          
+         
+                          
+           
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="col-lg-12">
+        <div class="pagination">
+            <ul>
+                <li><a href="#">Prev</a></li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+        </div>
+    </div>
+
+   </div>   
+    
+

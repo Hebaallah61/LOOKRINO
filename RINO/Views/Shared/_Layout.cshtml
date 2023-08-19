@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="~/assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="~/assets/css/tooplate-artxibition.css">
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+
+   
+</head>
+<body>
+    <div>
+        <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a asp-controller="Home" asp-action="index" class="logo">LOOK<em>RINO</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a asp-controller="Home" asp-action="index" class="active">Home</a></li>
+
+                            <li><vc:categories-menu></vc:categories-menu></li>
+                            <li><a asp-controller="Device" asp-action="DeviceList">Devices</a></li>
+                            
+                            <li><a href="/InStock">In Stock</a></li> 
+                            <li><a asp-controller="Contact" asp-action="Index">Contact Us</a></li> 
+                            <vc:shopping-cart-summary></vc:shopping-cart-summary>
+                            <li>
+                                <a asp-controller="Device" asp-action="Search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>  
+                         
+                        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+
+
+     <!-- *** Footer *** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="address">
+                        <h4>Cairo Address</h4>
+                        <span>6 Cairo, <br>New Cairo<br>Egypt</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Info</a></li>
+                            <li><a href="#">CAT1</a></li>
+                            <li><a href="#">CAT1</a></li>
+                            <li><a href="#">CAT1</a></li>
+                            <li><a href="#">CAT1</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hours">
+                        <h4>Open Hours</h4>
+                        <ul>
+                            <li>Sat to Thu: 9:00 AM to 10:00 PM</li>
+                            <li>Fri - Sun: 11:00 AM to 11:00 PM</li>
+                            <li>Holidays: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <p>CEASER</p>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <p class="copyright">Copyright 2023 LOOK RINO
+                    
+                    			
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="logo"><span>LOOK<em>RINO</em></span></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="index.html" class="active">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="rent-venue.html">In Stock</a></li>
+                                        <li><a href="shows-events.html">News</a></li> 
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="social-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="~/assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="~/assets/js/popper.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="~/assets/js/scrollreveal.min.js"></script>
+    <script src="~/assets/js/waypoints.min.js"></script>
+    <script src="~/assets/js/jquery.counterup.min.js"></script>
+    <script src="~/assets/js/imgfix.min.js"></script> 
+    <script src="~/assets/js/mixitup.js"></script> 
+    <script src="~/assets/js/accordions.js"></script>
+    <script src="~/assets/js/owl-carousel.js"></script>
+    
+    <!-- Global Init -->
+   <script src="~/assets/js/custom.js"></script>
+
+</body>
+</html>

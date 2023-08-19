@@ -1,0 +1,43 @@
+﻿<div>
+    <h3>
+        Enter your Search query
+    </h3>
+    <input type="text" id="txtDeviceName" />
+    <button class="btn btn-outline-dark">Search</button>
+</div>
+
+<table>
+    <tbody>
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("button").click(function(){
+            var searchquery = $.trim($("#txtDeviceName").val());
+            $("tbody").html("");
+            $.ajax({
+            type: "POST",
+            url: "https://localhost:7187/api/Search",
+            data: JSON.stringify(searchquery),
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function(devices) {
+                   $.each(devices, function(i, device){
+                   //console.log("Device:", device); // Log individual device object
+                   // console.log("DeviceId:", device.DeviceId); // Log DeviceId
+                   // console.log("Name:", device.Name); // Log Name
+                   // console.log("ImgUrl:", device.ImgUrl); // Log ImgUrl
+                    var appendElement = $("<tr>");
+                   
+                    appendElement.append($("<td>").html('<h2><a href="/Device/Details/' + device.deviceId + '" class="device-link">' + device.name + '</a></h2>'));
+                    $("tbody").append(appendElement);
+                });
+                },
+                error: function(xhr, status, error){
+                    console.log(xhr);
+                }
+            });
+        });
+    });
+</script>
